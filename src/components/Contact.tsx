@@ -11,10 +11,10 @@ export default function Contact() {
                     data-aos="zoom-in"
                     className="max-w-5xl mx-auto glass-dark p-8 md:p-20 rounded-[30px] md:rounded-[40px] border border-white/5 text-center"
                 >
-                    <h2 className="text-sm font-bold text-secondary tracking-widest uppercase mb-4">Ready to Innovate?</h2>
-                    <h3 className="text-3xl md:text-6xl font-bold text-white mb-8">Let's build the <span className="text-gradient">future of your data.</span></h3>
+                    <h2 className="text-sm font-bold text-secondary tracking-widest uppercase mb-4">Ready to Start?</h2>
+                    <h3 className="text-3xl md:text-6xl font-bold text-white mb-8">Let's build <span className="text-gradient">something great together.</span></h3>
                     <p className="text-slate-400 text-base md:text-xl max-w-2xl mx-auto mb-10 font-sans">
-                        Whether you have a specific project in mind or just want to explore possibilities, our team is ready to help you unlock insights.
+                        Have a project in mind? Contact us today to discuss how we can help your business grow.
                     </p>
 
                     <div className="flex flex-col sm:flex-row justify-center gap-4 md:gap-6">
@@ -38,11 +38,11 @@ export default function Contact() {
                             <div className="text-slate-500 text-[10px] md:text-xs uppercase tracking-widest">Headquarters</div>
                         </div>
                         <div>
-                            <div className="text-white font-bold mb-1">contact@inphora.net</div>
+                            <a href="mailto:contact@inphora.net" className="text-white font-bold mb-1 hover:text-secondary transition-colors block">contact@inphora.net</a>
                             <div className="text-slate-500 text-[10px] md:text-xs uppercase tracking-widest">Email Support</div>
                         </div>
                         <div>
-                            <div className="text-white font-bold mb-1">+254 705 522 155</div>
+                            <a href="tel:+254705522155" className="text-white font-bold mb-1 hover:text-secondary transition-colors block">+254 705 522 155</a>
                             <div className="text-slate-500 text-[10px] md:text-xs uppercase tracking-widest">Direct Line</div>
                         </div>
                         <div>

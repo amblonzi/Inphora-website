@@ -3,18 +3,18 @@ import React from 'react';
 const steps = [
     {
         num: "01",
-        title: "Strategic Discovery",
-        text: "We map your technical ecosystem and business objectives to identify high-impact opportunities for digital transformation."
+        title: "Discovery",
+        text: "We listen to your needs and understand your business goals first."
     },
     {
         num: "02",
-        title: "Precision Engineering",
-        text: "We architect secure, scalable infrastructure and custom models tailored to the unique constraints of your industry."
+        title: "Development",
+        text: "We build your solution using modern, secure, and clear coding standards."
     },
     {
         num: "03",
-        title: "Meticulous Deployment",
-        text: "Rigorous testing and phased rollouts ensure your solution is resilient, compliant, and ready for high-stakes operations."
+        title: "Launch",
+        text: "We test everything thoroughly ensuring a smooth launch with no surprises."
     }
 ];
 
@@ -24,11 +24,10 @@ export default function Approach() {
             <div className="container mx-auto px-6">
                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                     <div data-aos="fade-right">
-                        <h2 className="text-sm font-bold text-accent tracking-widest uppercase mb-3 text-center lg:text-left">The Inphora Method</h2>
-                        <h3 className="text-3xl md:text-5xl font-bold text-white mb-8 text-center lg:text-left">Engineering with <br className="hidden md:block" /> <span className="text-secondary">Surgical Precision</span></h3>
+                        <h2 className="text-sm font-bold text-accent tracking-widest uppercase mb-3 text-center lg:text-left">Our Process</h2>
+                        <h3 className="text-3xl md:text-5xl font-bold text-white mb-8 text-center lg:text-left">Built With <br className="hidden md:block" /> <span className="text-secondary">Care & Precision</span></h3>
                         <p className="text-slate-400 text-base md:text-lg mb-8 leading-relaxed font-sans text-center lg:text-left max-w-2xl mx-auto lg:mx-0">
-                            Our process is designed for clarity and impact. We prioritize
-                            transparency and measurable results at every phase of the project lifecycle.
+                            We act as your partner, keeping things transparent and focused on results at every step.
                         </p>
                         <div className="flex justify-center lg:justify-start">
                             <button className="px-8 py-3 glass border border-white/10 text-white rounded-lg hover:bg-white/10 transition-all">
