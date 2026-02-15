@@ -16,6 +16,9 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: "Inphora | Web & Data Solutions",
   description: "Advanced data science and custom software solutions for modern businesses.",
+  icons: {
+    icon: "/icon.svg",
+  },
 };
 
 export default function RootLayout({
