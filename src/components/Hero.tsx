@@ -21,7 +21,7 @@ export default function Hero() {
     }, []);
 
     return (
-        <section className="relative min-h-screen flex overflow-hidden bg-primary text-foreground pt-36 md:pt-48">
+        <section className="relative h-auto flex overflow-hidden bg-primary text-foreground pt-36 md:pt-48 pb-12 md:pb-20">
             {/* Background Grid */}
             <div className="absolute inset-0 grid-background pointer-events-none opacity-20" />
 

@@ -26,7 +26,7 @@ const services = [
 
 export default function Solutions() {
     return (
-        <section id="solutions" className="py-20 md:py-24 bg-primary relative overflow-hidden">
+        <section id="solutions" className="pt-10 pb-20 md:pt-16 md:pb-24 bg-primary relative overflow-hidden">
             <div className="container mx-auto px-6 relative z-10">
                 <div className="text-center mb-12 md:mb-16" data-aos="fade-up">
                     <h2 className="text-sm font-bold text-secondary tracking-widest uppercase mb-3">Our Expertise</h2>
