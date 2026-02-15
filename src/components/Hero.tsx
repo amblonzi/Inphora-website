@@ -5,8 +5,10 @@ import Link from 'next/link';
 
 export default function Hero() {
     const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+    const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
+        setMounted(true);
         const handleMouseMove = (e: MouseEvent) => {
             setMousePos({
                 x: (e.clientX / window.innerWidth - 0.5) * 50,
@@ -28,9 +30,9 @@ export default function Hero() {
                 <div className="absolute top-3/4 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-accent/20 to-transparent animate-[beam_15s_linear_infinite_reverse]" />
             </div>
 
-            {/* Floating Particles */}
+            {/* Floating Particles - Client Side Only to avoid hydration mismatch */}
             <div className="absolute inset-0 pointer-events-none overflow-hidden">
-                {[...Array(15)].map((_, i) => (
+                {mounted && [...Array(15)].map((_, i) => (
                     <div
                         key={i}
                         className="absolute w-1 h-1 bg-secondary/30 rounded-full"
