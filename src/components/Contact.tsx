@@ -22,7 +22,7 @@ export default function Contact() {
                         <div className="flex flex-col sm:flex-row justify-center gap-6">
                             <a
                                 href="mailto:contact@inphora.net"
-                                className="btn-accent text-xl px-16 py-6 group relative overflow-hidden"
+                                className="btn-accent group text-xl px-16 py-6 relative overflow-hidden"
                             >
                                 <span className="relative z-10">Contact Director</span>
                                 <div className="absolute inset-0 bg-gradient-to-r from-white to-slate-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

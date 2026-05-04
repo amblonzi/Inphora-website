@@ -60,9 +60,9 @@ export default function Solutions() {
                                     href={`https://wa.me/254705522155?text=I'm%20interested%20in%20Inphora's%20${encodeURIComponent(service.title)}%20solutions.`}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="btn-accent flex items-center gap-2 text-sm px-8 py-4 group/btn"
+                                    className="btn-accent group flex items-center gap-2 text-sm px-8 py-4"
                                 >
-                                    <Icons.WhatsApp width={18} height={18} className="group-hover/btn:scale-110 transition-transform" />
+                                    <Icons.WhatsApp width={18} height={18} className="group-hover:scale-110 transition-transform" />
                                     <span>Inquiry</span>
                                 </a>
                                 <div className="flex items-center gap-2 ml-auto">

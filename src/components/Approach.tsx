@@ -30,7 +30,7 @@ export default function Approach() {
                             Our rigorous development lifecycle ensures that every line of code serves a measurable business objective.
                         </p>
                         <div className="flex justify-center lg:justify-start">
-                            <button className="btn-primary px-12 py-5 group relative overflow-hidden">
+                            <button className="btn-primary group px-12 py-5 relative overflow-hidden">
                                 <span className="relative z-10">System Overview</span>
                                 <div className="absolute inset-0 bg-gradient-to-r from-slate-800 to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                             </button>

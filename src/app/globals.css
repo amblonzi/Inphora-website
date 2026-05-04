@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #f8fafc;
@@ -51,18 +53,6 @@
   --leading-normal: 1.5;
   --leading-relaxed: 1.625;
   --leading-loose: 2;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-primary: var(--primary);
-  --color-secondary: var(--secondary);
-  --color-accent: var(--accent);
-  --color-gold: var(--accent-gold);
-
-  --font-sans: var(--font-plus-jakarta), ui-sans-serif, system-ui;
-  --font-display: var(--font-outfit), ui-sans-serif, system-ui;
 }
 
 body {
@@ -142,19 +132,19 @@ p {
 
   /* Enhanced Interactive Elements */
   .btn-primary {
-    @apply bg-gradient-to-r from-primary to-slate-800 text-white font-bold rounded-xl px-8 py-4 transition-all duration-300 hover:from-slate-800 hover:to-primary hover:scale-105 hover:shadow-xl hover:shadow-primary/30 active:scale-95 relative overflow-hidden group;
+    @apply bg-gradient-to-r from-primary to-slate-800 text-white font-bold rounded-xl px-8 py-4 transition-all duration-300 hover:from-slate-800 hover:to-primary hover:scale-105 hover:shadow-xl hover:shadow-primary/30 active:scale-95 relative overflow-hidden;
   }
 
   .btn-secondary {
-    @apply bg-white border-2 border-primary/20 text-primary font-bold rounded-xl px-8 py-4 transition-all duration-300 hover:bg-slate-50 hover:border-primary/40 hover:scale-105 hover:shadow-lg active:scale-95 relative overflow-hidden group;
+    @apply bg-white border-2 border-primary/20 text-primary font-bold rounded-xl px-8 py-4 transition-all duration-300 hover:bg-slate-50 hover:border-primary/40 hover:scale-105 hover:shadow-lg active:scale-95 relative overflow-hidden;
   }
 
   .btn-accent {
-    @apply bg-gradient-to-r from-secondary to-cyan-600 text-primary font-bold rounded-xl px-8 py-4 transition-all duration-300 hover:from-cyan-500 hover:to-secondary hover:scale-105 hover:shadow-xl hover:shadow-secondary/30 active:scale-95 relative overflow-hidden group;
+    @apply bg-gradient-to-r from-secondary to-cyan-600 text-primary font-bold rounded-xl px-8 py-4 transition-all duration-300 hover:from-cyan-500 hover:to-secondary hover:scale-105 hover:shadow-xl hover:shadow-secondary/30 active:scale-95 relative overflow-hidden;
   }
 
   .btn-cta {
-    @apply bg-gradient-to-r from-primary via-secondary to-primary text-white font-black rounded-2xl px-12 py-6 text-lg transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-primary/40 active:scale-95 relative overflow-hidden group;
+    @apply bg-gradient-to-r from-primary via-secondary to-primary text-white font-black rounded-2xl px-12 py-6 text-lg transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-primary/40 active:scale-95 relative overflow-hidden;
   }
 
   .btn-cta::before {
@@ -167,7 +157,7 @@ p {
   }
 
   .card-hover {
-    @apply transition-all duration-300 hover:scale-102 hover:shadow-xl hover:shadow-primary/10;
+    @apply transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-primary/10;
   }
 
   .link-hover {

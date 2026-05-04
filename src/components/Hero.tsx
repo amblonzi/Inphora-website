@@ -92,7 +92,7 @@ export default function Hero() {
                             href="https://wa.me/254705522155"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="btn-cta flex items-center justify-center gap-4 min-w-[200px]"
+                            className="btn-cta group flex items-center justify-center gap-4 min-w-[200px]"
                         >
                             <Icons.WhatsApp width={28} height={28} className="group-hover:scale-110 transition-transform" />
                             <span>Start Consultation</span>
@@ -100,7 +100,7 @@ export default function Hero() {
                         </a>
                         <a
                             href="mailto:contact@inphora.net"
-                            className="btn-secondary flex items-center justify-center gap-4 min-w-[200px] text-lg font-bold"
+                            className="btn-secondary group flex items-center justify-center gap-4 min-w-[200px] text-lg font-bold"
                         >
                             <Icons.Mail width={24} height={24} className="group-hover:scale-110 transition-transform" />
                             <span>Email Us</span>
