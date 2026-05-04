@@ -53,6 +53,9 @@ export default function RootLayout({
       <body
         className={`${outfit.variable} ${plusJakartaSans.variable} font-sans antialiased`}
       >
+        <a href="#main-content" className="skip-link">
+          Skip to main content
+        </a>
         <AOSInitializer />
         {children}
         <script

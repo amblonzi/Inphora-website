@@ -1,53 +1,47 @@
 import React from 'react';
-import Link from 'next/link';
 
 export default function Contact() {
     return (
-        <section id="contact" className="py-20 md:py-24 bg-primary relative overflow-hidden">
-            <div className="absolute inset-0 bg-secondary/5 blur-[120px] rounded-full translate-y-1/2" />
-
-            <div className="container mx-auto px-6 relative z-10">
+        <section id="contact" className="h-full overflow-y-auto p-8 md:p-16 bg-white brand-pattern">
+            <div className="container mx-auto">
                 <div
                     data-aos="zoom-in"
-                    className="max-w-5xl mx-auto glass-dark p-8 md:p-20 rounded-[30px] md:rounded-[40px] border border-white/5 text-center"
+                    className="max-w-6xl mx-auto bg-slate-950 p-12 md:p-24 rounded-[3rem] text-center shadow-2xl relative overflow-hidden"
                 >
-                    <h2 className="text-sm font-bold text-secondary tracking-widest uppercase mb-4">Ready to Start?</h2>
-                    <h3 className="text-3xl md:text-6xl font-bold text-white mb-8">Let's build <span className="text-gradient">something great together.</span></h3>
-                    <p className="text-slate-400 text-base md:text-xl max-w-2xl mx-auto mb-10 font-sans">
-                        Have a project in mind? Contact us today to discuss how we can help your business grow.
-                    </p>
+                    {/* Background Detail */}
+                    <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 blur-[100px] -mr-32 -mt-32" />
+                    <div className="absolute bottom-0 left-0 w-64 h-64 bg-secondary/10 blur-[100px] -ml-32 -mb-32" />
 
-                    <div className="flex flex-col sm:flex-row justify-center gap-4 md:gap-6">
-                        <a
-                            href="mailto:contact@inphora.net"
-                            className="px-8 md:px-10 py-4 md:py-5 bg-secondary text-primary font-black rounded-xl md:rounded-2xl hover:bg-secondary/90 transition-all hover:scale-105 shadow-xl shadow-secondary/10"
-                        >
-                            Contact Us Today
-                        </a>
-                        <Link
-                            href="#solutions"
-                            className="px-8 md:px-10 py-4 md:py-5 bg-white/5 border border-white/10 text-white font-bold rounded-xl md:rounded-2xl hover:bg-white/10 transition-all flex items-center justify-center"
-                        >
-                            View Our Work
-                        </Link>
-                    </div>
+                    <div className="relative z-10">
+                        <h2 className="text-sm font-black text-secondary tracking-[0.3em] uppercase mb-8">Strategic Advisory</h2>
+                        <h3 className="text-4xl md:text-7xl font-black text-white mb-10 tracking-tighter leading-tight">Engage <span className="text-secondary">Infrastructure</span></h3>
+                        <p className="text-slate-400 text-xl md:text-2xl max-w-3xl mx-auto mb-14 font-sans font-bold leading-relaxed">
+                            Connect with our engineering leads to discuss your organizational roadmap.
+                        </p>
 
-                    <div className="mt-12 md:mt-16 pt-12 md:pt-16 border-t border-white/5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-                        <div>
-                            <div className="text-white font-bold mb-1">Nairobi, KE</div>
-                            <div className="text-slate-500 text-[10px] md:text-xs uppercase tracking-widest">Headquarters</div>
+                        <div className="flex flex-col sm:flex-row justify-center gap-6">
+                            <a
+                                href="mailto:contact@inphora.net"
+                                className="btn-accent text-xl px-16 py-6 group relative overflow-hidden"
+                            >
+                                <span className="relative z-10">Contact Director</span>
+                                <div className="absolute inset-0 bg-gradient-to-r from-white to-slate-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                            </a>
                         </div>
-                        <div>
-                            <a href="mailto:contact@inphora.net" className="text-white font-bold mb-1 hover:text-secondary transition-colors block">contact@inphora.net</a>
-                            <div className="text-slate-500 text-[10px] md:text-xs uppercase tracking-widest">Email Support</div>
-                        </div>
-                        <div>
-                            <a href="tel:+254705522155" className="text-white font-bold mb-1 hover:text-secondary transition-colors block">+254 705 522 155</a>
-                            <div className="text-slate-500 text-[10px] md:text-xs uppercase tracking-widest">Direct Line</div>
-                        </div>
-                        <div>
-                            <div className="text-white font-bold mb-1">24/7 Monitoring</div>
-                            <div className="text-slate-500 text-[10px] md:text-xs uppercase tracking-widest">Support</div>
+
+                        <div className="mt-20 pt-16 border-t border-white/10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
+                            <div>
+                                <div className="text-white font-black text-xl mb-2">Nairobi, KE</div>
+                                <div className="text-slate-500 text-[10px] uppercase tracking-[0.2em] font-black">Regional HQ</div>
+                            </div>
+                            <div>
+                                <a href="mailto:contact@inphora.net" className="text-white font-black text-xl mb-2 hover:text-secondary transition-colors block underline">contact@inphora.net</a>
+                                <div className="text-slate-500 text-[10px] uppercase tracking-[0.2em] font-black">Corporate Channel</div>
+                            </div>
+                            <div>
+                                <a href="tel:+254705522155" className="text-white font-black text-xl mb-2 hover:text-secondary transition-colors block">+254 705 522 155</a>
+                                <div className="text-slate-500 text-[10px] uppercase tracking-[0.2em] font-black">Advisory Line</div>
+                            </div>
                         </div>
                     </div>
                 </div>

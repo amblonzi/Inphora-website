@@ -26,52 +26,49 @@ const services = [
 
 export default function Solutions() {
     return (
-        <section id="solutions" className="pt-10 pb-20 md:pt-16 md:pb-24 bg-primary relative overflow-hidden">
-            <div className="container mx-auto px-6 relative z-10">
-                <div className="text-center mb-12 md:mb-16" data-aos="fade-up">
-                    <h2 className="text-sm font-bold text-secondary tracking-widest uppercase mb-3">Our Expertise</h2>
-                    <h3 className="text-3xl md:text-5xl font-bold text-white mb-6">Smart Solutions for <br className="hidden md:block" /> <span className="text-gradient">Your Business</span></h3>
-                    <p className="text-slate-400 max-w-2xl mx-auto text-base md:text-lg">
-                        We solve real business problems with technology. Our approach is practical, efficient, and built for results.
+        <section id="solutions" className="h-full overflow-y-auto p-8 md:p-16 bg-white brand-pattern">
+            <div className="container mx-auto">
+                <div className="mb-12 md:mb-16" data-aos="fade-up">
+                    <h2 className="text-sm font-black text-secondary tracking-[0.2em] uppercase mb-4">Industrial Intelligence</h2>
+                    <h3 className="text-4xl md:text-6xl font-black text-primary mb-6 tracking-tight">Core Solutions</h3>
+                    <p className="text-slate-600 max-w-2xl text-lg md:text-xl font-bold leading-relaxed">
+                        Precision-engineered frameworks for modern data challenges.
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10">
                     {services.map((service, index) => (
                         <div
                             key={index}
                             data-aos="fade-up"
                             data-aos-delay={index * 100}
-                            className="group p-6 md:p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-secondary/40 transition-all duration-300 hover:-translate-y-2 glass-dark flex flex-col"
+                            className="group p-10 md:p-12 rounded-3xl bg-gradient-to-br from-slate-50 to-white border border-slate-100 hover:border-primary/20 transition-all duration-500 hover:bg-white hover:shadow-2xl hover:shadow-primary/10 flex flex-col card-hover relative overflow-hidden"
                         >
-                            <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary mb-6 group-hover:scale-110 transition-transform">
+                            {/* Background decoration */}
+                            <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-full blur-2xl group-hover:bg-secondary/10 transition-colors duration-500" />
+                            
+                            <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary to-slate-800 text-secondary flex items-center justify-center mb-8 group-hover:scale-110 transition-all duration-300 shadow-xl shadow-primary/20 relative z-10">
                                 {service.icon}
                             </div>
-                            <h4 className="text-lg md:text-xl font-bold text-white mb-4">{service.title}</h4>
-                            <p className="text-slate-400 leading-relaxed font-sans group-hover:text-slate-300 transition-colors text-sm md:text-base mb-8 flex-grow">
+                            <h4 className="text-2xl md:text-3xl font-black text-primary mb-6 relative z-10 group-hover:text-secondary transition-colors duration-300">{service.title}</h4>
+                            <p className="text-slate-600 leading-relaxed font-sans font-bold text-base md:text-lg mb-8 flex-grow relative z-10">
                                 {service.description}
                             </p>
 
-                            <div className="flex items-center gap-4 pt-6 border-t border-white/5">
+                            <div className="flex items-center gap-6 pt-8 border-t border-slate-200 relative z-10">
                                 <a
                                     href={`https://wa.me/254705522155?text=I'm%20interested%20in%20Inphora's%20${encodeURIComponent(service.title)}%20solutions.`}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="p-2.5 rounded-lg bg-secondary/10 text-secondary hover:bg-secondary hover:text-primary transition-all"
-                                    title="WhatsApp Inquiry"
-                                    aria-label={`Contact via WhatsApp about ${service.title}`}
+                                    className="btn-accent flex items-center gap-2 text-sm px-8 py-4 group/btn"
                                 >
-                                    <Icons.WhatsApp width={18} height={18} />
+                                    <Icons.WhatsApp width={18} height={18} className="group-hover/btn:scale-110 transition-transform" />
+                                    <span>Inquiry</span>
                                 </a>
-                                <a
-                                    href={`mailto:contact@inphora.net?subject=Inquiry%20regarding%20${encodeURIComponent(service.title)}`}
-                                    className="p-2.5 rounded-lg bg-white/5 text-slate-400 hover:text-white hover:bg-white/10 transition-all"
-                                    title="Email Inquiry"
-                                    aria-label={`Email inquiry about ${service.title}`}
-                                >
-                                    <Icons.Mail width={18} height={18} />
-                                </a>
-                                <span className="text-[10px] uppercase tracking-widest text-slate-500 font-bold ml-auto">Get Help</span>
+                                <div className="flex items-center gap-2 ml-auto">
+                                    <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                                    <span className="text-[10px] uppercase tracking-[0.2em] text-slate-400 font-black">Verified Service</span>
+                                </div>
                             </div>
                         </div>
                     ))}

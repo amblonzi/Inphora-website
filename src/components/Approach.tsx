@@ -20,36 +20,40 @@ const steps = [
 
 export default function Approach() {
     return (
-        <section id="approach" className="py-20 md:py-24 bg-[#010413] relative overflow-hidden">
-            <div className="container mx-auto px-6">
-                <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <section id="approach" className="h-full overflow-y-auto p-8 md:p-16 bg-slate-50 brand-pattern">
+            <div className="container mx-auto">
+                <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                     <div data-aos="fade-right">
-                        <h2 className="text-sm font-bold text-accent tracking-widest uppercase mb-3 text-center lg:text-left">Our Process</h2>
-                        <h3 className="text-3xl md:text-5xl font-bold text-white mb-8 text-center lg:text-left">Built With <br className="hidden md:block" /> <span className="text-secondary">Care & Precision</span></h3>
-                        <p className="text-slate-400 text-base md:text-lg mb-8 leading-relaxed font-sans text-center lg:text-left max-w-2xl mx-auto lg:mx-0">
-                            We act as your partner, keeping things transparent and focused on results at every step.
+                        <h2 className="text-sm font-black text-secondary tracking-[0.2em] uppercase mb-4">Our Methodology</h2>
+                        <h3 className="text-4xl md:text-6xl font-black text-primary mb-8 leading-tight tracking-tighter">Precision <br /> Development</h3>
+                        <p className="text-slate-700 text-lg md:text-xl mb-10 leading-relaxed font-sans font-bold">
+                            Our rigorous development lifecycle ensures that every line of code serves a measurable business objective.
                         </p>
                         <div className="flex justify-center lg:justify-start">
-                            <button className="px-8 py-3 glass border border-white/10 text-white rounded-lg hover:bg-white/10 transition-all">
-                                Learn More About Our Process
+                            <button className="btn-primary px-12 py-5 group relative overflow-hidden">
+                                <span className="relative z-10">System Overview</span>
+                                <div className="absolute inset-0 bg-gradient-to-r from-slate-800 to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                             </button>
                         </div>
                     </div>
 
-                    <div className="space-y-10 md:space-y-12">
+                    <div className="space-y-8 md:space-y-12">
                         {steps.map((step, index) => (
                             <div
                                 key={index}
                                 data-aos="fade-left"
                                 data-aos-delay={index * 150}
-                                className="flex gap-6 items-start"
+                                className="flex gap-8 items-start group p-8 rounded-3xl bg-gradient-to-br from-white to-slate-50 border border-slate-100 shadow-sm hover:shadow-xl hover:shadow-primary/10 transition-all duration-500 card-hover relative overflow-hidden"
                             >
-                                <div className="text-3xl md:text-4xl font-black text-white/10 font-display">
+                                {/* Background decoration */}
+                                <div className="absolute top-0 right-0 w-24 h-24 bg-secondary/5 rounded-full blur-xl group-hover:bg-secondary/10 transition-colors duration-500" />
+                                
+                                <div className="text-4xl md:text-5xl font-black text-slate-200 font-display transition-all duration-300 group-hover:text-secondary group-hover:scale-105 relative z-10">
                                     {step.num}
                                 </div>
-                                <div>
-                                    <h4 className="text-lg md:text-xl font-bold text-white mb-2">{step.title}</h4>
-                                    <p className="text-slate-400 font-sans leading-relaxed text-sm md:text-base">
+                                <div className="pt-2 relative z-10">
+                                    <h4 className="text-xl md:text-2xl font-black text-primary mb-3 group-hover:text-secondary transition-colors duration-300">{step.title}</h4>
+                                    <p className="text-slate-600 font-sans leading-relaxed text-base md:text-lg font-bold">
                                         {step.text}
                                     </p>
                                 </div>
@@ -58,9 +62,6 @@ export default function Approach() {
                     </div>
                 </div>
             </div>
-
-            {/* Decorative vertical line for the steps */}
-            <div className="absolute top-0 bottom-0 left-[50%] w-px bg-gradient-to-b from-transparent via-white/5 to-transparent hidden lg:block" />
         </section>
     );
 }
