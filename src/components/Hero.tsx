@@ -62,7 +62,7 @@ export default function Hero() {
                         className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-primary/10 bg-primary/5 text-xs font-black text-primary mb-12 uppercase tracking-widest"
                     >
                         <div className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
-                        Enterprise Intelligence
+                        Business Solutions
                     </div>
 
                     <h1
@@ -70,8 +70,8 @@ export default function Hero() {
                         data-aos-delay="100"
                         className="text-6xl md:text-9xl font-black leading-[1.1] mb-12 text-primary tracking-tighter"
                     >
-                        Digital <br />
-                        <span className="text-gradient animate-gradient bg-[length:200%_auto]">Architecture</span>
+                        Simple <br />
+                        <span className="text-gradient animate-gradient bg-[length:200%_auto]">Software</span>
                     </h1>
 
                     <p
@@ -79,8 +79,8 @@ export default function Hero() {
                         data-aos-delay="200"
                         className="text-xl md:text-3xl text-slate-700 max-w-3xl mx-auto mb-16 leading-relaxed font-sans font-bold"
                     >
-                        Engineering high-performance software ecosystems
-                        for industry leaders.
+                        Building reliable software solutions
+                        that help your business grow.
                     </p>
 
                     <div
@@ -115,15 +115,15 @@ export default function Hero() {
                     >
                         <div className="flex items-center gap-2">
                             <div className="w-3 h-3 rounded-full bg-emerald-500 animate-pulse" />
-                            <span>Available 24/7</span>
+                            <span>Always Available</span>
                         </div>
                         <div className="flex items-center gap-2">
                             <div className="w-3 h-3 rounded-full bg-blue-500" />
-                            <span>Enterprise Ready</span>
+                            <span>Business Ready</span>
                         </div>
                         <div className="flex items-center gap-2">
                             <div className="w-3 h-3 rounded-full bg-purple-500" />
-                            <span>Expert Team</span>
+                            <span>Expert Help</span>
                         </div>
                     </div>
                 </div>

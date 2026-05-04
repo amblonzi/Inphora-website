@@ -29,10 +29,10 @@ export default function Solutions() {
         <section id="solutions" className="h-full overflow-y-auto p-8 md:p-16 bg-white brand-pattern">
             <div className="container mx-auto">
                 <div className="mb-12 md:mb-16" data-aos="fade-up">
-                    <h2 className="text-sm font-black text-secondary tracking-[0.2em] uppercase mb-4">Industrial Intelligence</h2>
-                    <h3 className="text-4xl md:text-6xl font-black text-primary mb-6 tracking-tight">Core Solutions</h3>
+                    <h2 className="text-sm font-black text-secondary tracking-[0.2em] uppercase mb-4">What We Do</h2>
+                    <h3 className="text-4xl md:text-6xl font-black text-primary mb-6 tracking-tight">Our Services</h3>
                     <p className="text-slate-600 max-w-2xl text-lg md:text-xl font-bold leading-relaxed">
-                        Precision-engineered frameworks for modern data challenges.
+                        Simple solutions that solve real business problems.
                     </p>
                 </div>
 
@@ -63,11 +63,11 @@ export default function Solutions() {
                                     className="btn-accent group flex items-center gap-2 text-sm px-8 py-4"
                                 >
                                     <Icons.WhatsApp width={18} height={18} className="group-hover:scale-110 transition-transform" />
-                                    <span>Inquiry</span>
+                                    <span>Ask Us</span>
                                 </a>
                                 <div className="flex items-center gap-2 ml-auto">
                                     <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                                    <span className="text-[10px] uppercase tracking-[0.2em] text-slate-400 font-black">Verified Service</span>
+                                    <span className="text-[10px] uppercase tracking-[0.2em] text-slate-400 font-black">Trusted</span>
                                 </div>
                             </div>
                         </div>

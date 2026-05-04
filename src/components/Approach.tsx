@@ -24,14 +24,14 @@ export default function Approach() {
             <div className="container mx-auto">
                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                     <div data-aos="fade-right">
-                        <h2 className="text-sm font-black text-secondary tracking-[0.2em] uppercase mb-4">Our Methodology</h2>
-                        <h3 className="text-4xl md:text-6xl font-black text-primary mb-8 leading-tight tracking-tighter">Precision <br /> Development</h3>
+                        <h2 className="text-sm font-black text-secondary tracking-[0.2em] uppercase mb-4">How We Work</h2>
+                        <h3 className="text-4xl md:text-6xl font-black text-primary mb-8 leading-tight tracking-tighter">Simple <br /> Process</h3>
                         <p className="text-slate-700 text-lg md:text-xl mb-10 leading-relaxed font-sans font-bold">
-                            Our rigorous development lifecycle ensures that every line of code serves a measurable business objective.
+                            We follow clear steps to build solutions that meet your business needs.
                         </p>
                         <div className="flex justify-center lg:justify-start">
                             <button className="btn-primary group px-12 py-5 relative overflow-hidden">
-                                <span className="relative z-10">System Overview</span>
+                                <span className="relative z-10">Learn More</span>
                                 <div className="absolute inset-0 bg-gradient-to-r from-slate-800 to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                             </button>
                         </div>
